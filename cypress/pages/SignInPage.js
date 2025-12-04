@@ -1,5 +1,5 @@
 class SignInPage {
-  // Step 0: Close modal if it appears
+  //  Close modal if it appears
   closeInitialModal() {
     cy.get("body").then(($body) => {
       const modal = $body.find('button[aria-label="Close"]');
@@ -9,9 +9,8 @@ class SignInPage {
     });
   }
 
-  // Step 1 & 2: Navigate to Student Login
+  //  Navigate to Student Login
   navigateToStudentLogin() {
-    // Step 0: Close modal if it appears (wait up to 15s)
     cy.get("body").then(($body) => {
       if ($body.find('button[aria-label="Close"]').length) {
         cy.get('button[aria-label="Close"]', { timeout: 15000 }).then(
@@ -24,12 +23,12 @@ class SignInPage {
       }
     });
 
-    // Step 1: Click Login menu (#fade-button)
+    // Step 1: Click Login menu
     cy.get("#fade-button", { timeout: 10000 })
       .should("exist")
       .click({ force: true });
 
-    // Step 2: Wait for menu to appear and click "Login as a Student"
+    // click "Login as a Student"
     cy.get("ul[role='menu']", { timeout: 10000 }).within(() => {
       cy.contains("Login as a Student").then(($li) => {
         // force click because it might still be covered by a fading overlay
@@ -72,7 +71,7 @@ class SignInPage {
     // Click submit button
     cy.get('button[type="submit"]').click({ force: true });
 
-    // Optional: Check for error message
+    // Check for error message
     cy.contains(/Failed to get student|not registered|error/i, {
       timeout: 10000,
     }).should("be.visible");
