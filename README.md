@@ -25,11 +25,11 @@ Excel file contains all scenarios with positive and negative tests for logging u
 
 # Project Structure (POM)
   cypress
-  |-e2e                 #test script
-  |-fixtures            #test data
-  |-pages               #pom files
-  |-reports             #test report
-  |-support             #custom commands
+  /-e2e                 #test script
+  /-fixtures            #test data
+  /-pages               #pom files
+  /-reports             #test report
+  /-support             #custom commands
 
 # Additional Notes
 Things That Could Break Sign-In
