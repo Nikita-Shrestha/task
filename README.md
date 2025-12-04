@@ -18,10 +18,11 @@ https://docs.google.com/spreadsheets/d/1-Hz5gX0NJHCWvskksJhirTNVbciN6gDe5lSnTkfP
 Excel file contains all scenarios with positive and negative tests for logging using email only.
 
 # How to Run Tests
-1. Install dependencies: **npm install**
-2. Open Cypress test runner: **npx cypress open**
-3. Run tests
-4. Reports are generated automatically in **cypress/reports** and can be viewed manually.
+1.Install **Node.js**
+2. Install dependencies: **npm install**
+3. Open Cypress test runner: **npx cypress open**
+4. Run tests
+5. Reports are generated automatically in **cypress/reports** and can be viewed manually.
 
 # Project Structure (POM)
   cypress
