@@ -18,6 +18,7 @@ https://docs.google.com/spreadsheets/d/1-Hz5gX0NJHCWvskksJhirTNVbciN6gDe5lSnTkfP
 Excel file contains all scenarios with positive and negative tests for logging using email only.
 
 # How to Run Tests
+
 1.Install **Node.js**
 2. Install dependencies: **npm install**
 3. Open Cypress test runner: **npx cypress open**
