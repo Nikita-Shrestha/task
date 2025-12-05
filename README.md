@@ -19,8 +19,7 @@ Excel file contains all scenarios with positive and negative tests for logging u
 
 # How to Run Tests
 
-
-1.Install **Node.js**
+1. Install **Node.js**
 2. Install dependencies: **npm install**
 3. Open Cypress test runner: **npx cypress open**
 4. Run tests
